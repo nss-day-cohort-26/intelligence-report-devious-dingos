@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="rap-sheet.css">
     <title>Rap Sheet</title>
 </head>
 
 <body>
+
+    <!-- nav-bar -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Most Wanted</a>
@@ -23,7 +27,7 @@
                 <a class="nav-item nav-link active" href="index.html">Summary
                     <span class="sr-only">(current)</span>
                 </a>
-                <a class="nav-item nav-link" href="rap-c.html">Rap Sheet</a>
+                <a class="nav-item nav-link" href="rap-sheet.html">Rap Sheet</a>
                 <a class="nav-item nav-link" href="newsFeed.html">News Feed</a>
                 <a class="nav-item nav-link" href="financial.html">Financial Interests</a>
             </div>
@@ -34,55 +38,120 @@
     <br>
     <br>
 
-    <h3>Crimes Committed</h3>
-    <ul id="crime-section">
-        <li>Hacking Traffic Lights</li>
-        <li>Jaywalking</li>
-        <li>Cyber Bullying</li>
-    </ul>
+    <h1>Crimes...</h1>
 
-    <h3>Crimes Convicted</h3>
-    <ul id="conviction-section">
-        <li>Identity Theft</li>
-        <li>Grand Theft Auto</li>
-        <li>Battery</li>
-    </ul>
+    <div id="crimes-section">
+        <div id="committed-section" class="crimes-section-child">
+            <h3>Committed</h3>
+            <ul>
+                <li class="crime-list">Hacking Traffic Lights</li>
+                <li class="crime-list">Jaywalking</li>
+                <li class="crime-list">Cyber Bullying</li>
+            </ul>
+        </div>
 
-    <h3>Prisons Incarcerated</h3>
-    <ul id="prison-section">
-        <li>Guantanamo Bay detention camp -
-            <span>Dates: 2014-2015</span>
-        </li>
-        <img src="images/guantanamo-bay.jpeg" alt="Guantanamo Bay Prison">
-        <li>Alcatraz Federal Penitentiary -
-            <span>Dates: 2015-2016</span>
-        </li>
-        <img src="images/alcatraz.jpg" alt="Alcatraz Prison">
-        <li>Riverbend Maximum Security Institution -
-            <span>Dates: 2016-2017</span>
-        </li>
-        <img src="images/riverbend-prison.jpg" alt="Riverbend Prison">
-    </ul>
+        <div id="convicted-section" class="crimes-section-child">
+            <h3>Convicted</h3>
+            <ul>
+                <li class="crime-list">Identity Theft</li>
+                <li class="crime-list">Grand Theft Auto</li>
+                <li class="crime-list">Battery</li>
+            </ul>
+        </div>
+    </div>
 
-    <h3>Witnesses</h3>
-    <ul id="witness-section">
-        <li>Leslie Knope</li>
-        <img src="images/leslie-knope.jpeg" alt="Leslie Knope">
-        <li>Chris Traeger</li>
-        <img src="images/chris-traeger.jpeg" alt="Chris Traeger">
-        <li>Ann Perkins</li>
-        <img src="images/ann-perkins.jpeg" alt="Ann Perkins">
-    </ul>
+    <hr>
 
-    <h3>Victims</h3>
-    <ul id="victim-section">
-        <li>Ron Swanson</li>
-        <img src="images/ron-swanson.jpeg" alt="Ron Swanson">
-        <li>Gary Gergich</li>
-        <img src="images/jerry-gergich.jpeg" alt="Jerry Gergich">
-        <li>Tom Haverford</li>
-        <img src="images/tom-haverford.jpeg" alt="Tom Haverford">
-    </ul>
+    <h1>Prisons Incarcerated</h1>
+
+    <div id="prison-container">
+        <div>
+            <ul id="prison-section">
+                <li>Guantanamo Bay detention camp -
+                    <span>Dates: 2014-2015</span>
+                </li>
+                <img src="images/guantanamo-bay.jpeg" alt="Guantanamo Bay Prison">
+                <li>Alcatraz Federal Penitentiary -
+                    <span>Dates: 2015-2016</span>
+                </li>
+                <img src="images/alcatraz.jpg" alt="Alcatraz Prison">
+                <li>Riverbend Maximum Security Institution -
+                    <span>Dates: 2016-2017</span>
+                </li>
+                <img src="images/riverbend-prison.jpg" alt="Riverbend Prison">
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1>Witnesses</h1>
+
+    <div id="witness-container" class="card-container">
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/leslie_knope.png" alt="Leslie Knope">
+            <div class="card-body text-center">
+                <h5 class="card-title">Leslie Knope</h5>
+                <a href="https://en.wikipedia.org/wiki/Leslie_Knope" target="_blank" class="btn btn-success"><i class="fas fa-user"></i> Biography</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/Chris_Traeger.jpg" alt="Chris Traeger">
+            <div class="card-body text-center">
+                <h5 class="card-title">Chris Traeger</h5>
+                <a href="https://en.wikipedia.org/wiki/Chris_Traeger" target="_blank" class="btn btn-success"><i class="fas fa-user"></i> Biography</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/Ann_Perkins.jpg" alt="Ann Perkins">
+            <div class="card-body text-center">
+                <h5 class="card-title">Ann Perkins</h5>
+                <a href="https://en.wikipedia.org/wiki/Ann_Perkins" target="_blank" class="btn btn-success"><i class="fas fa-user"></i> Biography</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <hr>
+
+    <h1>Victims</h1>
+
+    <div id="victim-container" class="card-container">
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/Ron_Swanson.jpg" alt="Ron Swanson">
+            <div class="card-body text-center">
+                <h5 class="card-title">Ron Swanson</h5>
+                <a href="https://en.wikipedia.org/wiki/Ron_Swanson"target="_blank" class="btn btn-warning"><i class="fas fa-user"></i> Biography</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/Jerry_Gergich.jpg" alt="Jerry Gergich">
+            <div class="card-body text-center">
+                <h5 class="card-title">Gary Gergich</h5>
+                <a href="https://en.wikipedia.org/wiki/Jerry_Gergich" target="_blank" class="btn btn-warning"><i class="fas fa-user"></i> Biography</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/Tom_Haverford.jpg" alt="Tom Haverford">
+            <div class="card-body text-center">
+                <h5 class="card-title">Tom Haverford</h5>
+                <a href="https://en.wikipedia.org/wiki/Tom_Haverford" target="_blank" class="btn btn-warning"><i class="fas fa-user"></i> Biography</a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <h6>&copy Sathvik Reddy | NSS Cohort 26</h6>
+    </footer>
 
 </body>
 
