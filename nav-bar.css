@@ -1,0 +1,8 @@
+.navbar-brand,
+.navbar-light,
+.navbar-nav,
+.nav-link {
+   color:white !important;
+   transition: transition: font 0.3s ease !important;
+}
+
