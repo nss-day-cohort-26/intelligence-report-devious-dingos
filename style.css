@@ -5,11 +5,16 @@
 }
 p, li {
     font-family: 'Courier New', Courier, monospace;
+    
+}
+p {
+    font-weight: bold;
 }
 
 #suspects {
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 600px;
+  margin: 40px;
 }
 #wanted {
     margin-top: 80px;
@@ -18,19 +23,22 @@ p, li {
     background-color: red;
     padding: 15px;
     font-family: "Times New Roman", Times, serif;
-    
+    text-decoration: underline;
+    border: 7px solid black;
 
 }
 #suspects {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 30px solid black;
 }
 .bastard {
     height: 300px;
     width: 300px;
     padding: 10px;
-    
+    border: 30px solid black; 
+   
 }  
 #cont{
     display: flex;
