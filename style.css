@@ -1,4 +1,40 @@
+
+.five {
+   font-family: "Times New Roman", Times, serif; 	
+  
+}
+p, li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #suspects {
   width: 500px;
   height: 500px;
 }
+#wanted {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: red;
+    padding: 15px;
+    font-family: "Times New Roman", Times, serif;
+    
+
+}
+#suspects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bastard {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    
+}  
+#cont{
+    display: flex;
+    flex-direction: row;
+    
+}
+
