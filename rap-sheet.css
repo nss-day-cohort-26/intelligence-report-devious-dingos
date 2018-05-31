@@ -1,11 +1,12 @@
 #jumbotron {
-    background: linear-gradient(to bottom right,black, green, white);
-    padding: 150px;
+    background: linear-gradient(to bottom right, burlywood black);
+    padding: 100px;
 }
 
 #jumbotron-title {
-    color: white;
+    color: black;
     font-size: 125px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1, h3, h4 {
@@ -59,8 +60,12 @@ p {
     justify-content: space-evenly;
 }
 
+.card-body {
+    background-color: burlywood;
+}
 footer {
     display: block;
     text-align: center;
     padding: 15px 0;
+    background: linear-gradient(to bottom right, burlywood burlywood, black);
 }
