@@ -3,10 +3,10 @@
 .navbar-nav,
 .nav-link {
    color:white !important;
-   transition: transition: font 0.3s ease !important;
 }
+
 body {
-    background-color: burlywood;
+    background: linear-gradient(to bottom right,black, burlywood, burlywood); 
 }
 
 .nav-link {

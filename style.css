@@ -1,4 +1,5 @@
 
+
 .five {
    font-family: "Times New Roman", Times, serif; 	
   
@@ -11,11 +12,7 @@ p {
     font-weight: bold;
 }
 
-#suspects {
-  width: 800px;
-  height: 600px;
-  margin: 40px;
-}
+
 #wanted {
     margin-top: 80px;
     margin-bottom: 40px;
@@ -27,22 +24,34 @@ p {
     border: 7px solid black;
 
 }
+
+
 #suspects {
+    border: 30px solid black;
+    width: 800px;
+    height: 600px;
+    margin: 40px;
+    border-radius: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 30px solid black;
 }
 .bastard {
     height: 300px;
     width: 300px;
     padding: 10px;
     border: 30px solid black; 
+    border-radius: 5%;
    
 }  
 #cont{
     display: flex;
     flex-direction: row;
     
+}
+footer {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
 }
 
