@@ -7,15 +7,38 @@ h1 {
     text-align: center;
     text-underline-position: below;
     color: firebrick;
+    font-display: "Times New Roman", Times, serif;
 }
 
 h2 {
     color: firebrick;
+    font-display: "Times New Roman", Times, serif;
+    text-align: center;
 }
 
 .resize {
     width: 540px;
     height: auto;
 }
+
+p {
+    font-display: "Courier New", Courier, monospace;
+}
+
+.jayWalkingContainer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: wrap;
+}
+
+#paragraph1 {
+    width: 500px;
+    padding: 100px;
+
+}
+
+
 
 
