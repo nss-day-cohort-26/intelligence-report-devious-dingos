@@ -6,6 +6,9 @@
     text-align: center;
     color: black;
     flex-wrap: wrap;
+    width: 75%;
+    align-self: center;
+    margin: auto;
 }
 
 .blackmailed-flex-item {
@@ -22,16 +25,18 @@
     width: 90%;
 }
 
-#bank-pic {
-    height: 20em;
-    max-width: 100%;
-}
-
 li {
-    list-style: none;
+    list-style: square;
 }
 
-.bank-list {
+ul {
+    border-left: gray 5px double;
+    border-right: gray 5px double;
+    width: 40%;
+    margin: auto;
+}
+
+.bank-list, #money-list {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -47,7 +52,7 @@ h1 {
 .heading {
     text-align: center;
     font-size: 2em;
-    padding-top: 1%;
+    padding-bottom: 2%;
 }
 
 #top-heading {
@@ -62,6 +67,37 @@ h1 {
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-basis: 100%;
+}
+
+#snake-pic, #rent-pic {
+    height: 20em;
+    max-width: 100%;
+}
+
+li, p {
+    font-family: ‘Courier New’, Courier, monospace;
+}
+
+h1, h3, h5, h6 {
+    font-family: ‘Times New Roman’, Times, serif;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+}
+
+hr {
+    padding: 2%;
+}
+
+img {
+    padding: 2%;
+    border-radius: 50px;
+}
+
+h1, h3 {
+    text-shadow: 1px 1px gray;
 }
 
