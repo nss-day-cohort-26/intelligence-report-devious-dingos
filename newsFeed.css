@@ -7,38 +7,64 @@ h1 {
     text-align: center;
     text-underline-position: below;
     color: firebrick;
-    font-display: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 150%;
+    padding-bottom: 50px;
 }
 
 h2 {
     color: firebrick;
-    font-display: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .resize {
     width: 540px;
     height: auto;
+    padding-bottom: 20px;
 }
 
 p {
-    font-display: "Courier New", Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
 }
 
-.jayWalkingContainer {
+.container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
     justify-content: center;
-    align-items: flex-end;
-    flex-flow: wrap;
+    padding-bottom: 25px;
 }
 
-#paragraph1 {
+.container, .paragraph1 {
+    flex-direction: row;
+    justify-content: space-evenly ;
+}
+
+.paragraph1 {
     width: 500px;
-    padding: 100px;
-
+    padding: 25px;
+    font-size: 90%;
 }
 
+#rating1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 125%;
+    text-align: center;
+}
 
+footer {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+}
 
+#jumbotron {
+    background: linear-gradient(to bottom right,black, burlywood, burlywood);
+    padding: 100px;
+}
 
+#jumbotron-title {
+    font-size: 125px;
+    font-family: 'Courier New', Courier, monospace;
+}
